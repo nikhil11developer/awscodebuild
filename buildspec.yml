@@ -19,3 +19,8 @@ phases:
       
       - ls -la
       - aws s3 sync . s3://nikhilroark-awsome-bucket-of-files --delete
+artifacts:
+  files:
+    - 'dist/my-angular-project/**/*'
+    - appspec.yml
+    - 'deploy-scripts/**/*'      
